@@ -3,15 +3,23 @@
 import './index.scss';
 
 import * as angular from 'angular';
+import {techsModule} from './app/techs/index';
 
-import { cuDialog } from './app/components/cuDialog';
-import { cuButton } from './app/components/cuButton';
+import {main} from './app/main';
+import {header} from './app/header';
+import {title} from './app/title';
+import {footer} from './app/footer';
 
-import { cuDialogDemo } from './app/demo/cuDialogDemo';
+import { cuDialog } from './app/components/cuDialog/comp';
+import { cuButton } from './app/components/cuButton/comp';
+import { cuDialogDemo } from './app/demo/cuDialogDemo/comp';
 
 angular
-  .module('app', [])
+  .module('app', [techsModule])
   .component('cuDialog', cuDialog)
   .component('cuButton', cuButton)
-  
-  .component('cuDialogDemo', cuDialogDemo);
+  .component('cuDialogDemo', cuDialogDemo)
+  .component('app', main)
+  .component('fountainHeader', header)
+  .component('fountainTitle', title)
+  .component('fountainFooter', footer);

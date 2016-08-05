@@ -1,7 +1,5 @@
-import './styles.scss';
-
 /** @ngInject */
-function getTemplate($attrs):string {
+function getTemplate($attrs: any):string {
   return `<button class="cu-button" ng-transclude type="${$attrs.type || 'button'}"></button>`;
 };
 
