@@ -1,0 +1,7 @@
+{
+  "name": "ng-compui",
+  "main": "./dist/app-516e5a9aa6e8ddf320a5.js",
+  "ignore": [
+    "package.json"
+  ]
+}
